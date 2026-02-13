@@ -1,0 +1,311 @@
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+
+const resources = {
+  ru: {
+    translation: {
+      title: "UzbekHouse & QarsillamaSomsa",
+      subtitle: "Связаться с нами",
+      instagram_uzbekhouse: "Instagram • UzbekHouse",
+      instagram_qarsillama: "Instagram • QarsillamaSomsa",
+      telegram: "Telegram канал",
+      location: "Мекка — Батха Курайш",
+      Menu: "Меню",
+
+      back_to_menu: "Назад в меню",
+      back_home: "На главную",
+      order_via_telegram: "Заказать через Telegram",
+      menu: "Меню",
+      menu_subtitle: "Настоящий вкус Узбекистана в Мекке • Uzbek House & Qarsillama Somsa",
+
+      // Разделы меню (заголовки категорий)
+      "section.kaboblar": "Шашлыки / Кабобы",
+      "section.osh": "Плов",
+      "section.somsa": "Қарсиллама сомса",
+      "section.salads": "Салаты",
+      "section.teas": "Чойлар",
+      "section.drinks": "Ичимликлар",
+
+      // Kaboblar
+      "kaboblar.subtitle": "Готовим на углях, подаём свежими",
+      "kaboblar.qiyma": "Қийма кабоб (Люля-кебаб)",
+      "kaboblar.qiyma_desc": "Нежный молотый шашлык из баранины с луком и специями",
+      "kaboblar.jaz": "Жаз кабоб (кусковой)",
+      "kaboblar.jaz_desc": "Сочный шашлык из маринованных кусочков баранины или говядины",
+      "kaboblar.tovuq": "Товуқ кабоб",
+      "kaboblar.tovuq_desc": "Шашлык из куриного мяса, маринованный в специях",
+      "kaboblar.serving": "Подаётся с свежим луком, лепёшкой и соусом",
+      "kaboblar.cooked_on_coals": "Готовится на настоящих углях — аромат не передать словами!",
+
+      // Osh / Plov
+      "osh.subtitle": "Два вида плова: Lazir и Devzira — выбирайте свой любимый",
+      "osh.lazir": "Ош Lazir (Лазер)",
+      "osh.lazir_desc": "Классический плов на рисе Лазер — рассыпчатый, ароматный, с бараниной и жёлтой морковью",
+      "osh.devzira": "Ош Devzira",
+      "osh.devzira_desc": "Премиум-плов на элитном рисе Девзира — очень насыщенный вкус, нежная баранина",
+      "osh.serving": "Подаётся горячим с ачичуком, лепёшкой и айраном",
+      "osh.cooked_in_kazan": "Готовится в большом казане на открытом огне",
+
+      // Somsa
+      "somsa.subtitle": "Три вида: мясная, тыквенная и куриная — хрустящие и сочные",
+      "somsa.gosht": "Го'штли сомса",
+      "somsa.gosht_desc": "Сочная самса с рубленой бараниной, луком и классическими специями",
+      "somsa.qovoq": "Қовоқли сомса",
+      "somsa.qovoq_desc": "Нежная тыквенная самса с луком, специями и лёгкой сладостью",
+      "somsa.tovuq": "Товуқ сомса",
+      "somsa.tovuq_desc": "Ароматная самса с курицей, луком и восточными специями",
+      "somsa.serving": "Подаётся горячей с зеленью, соусом и свежим чаем",
+      "somsa.crispy": "Хрустящее многослойное тесто — фирменный рецепт Qarsillama Somsa",
+
+      // Salads
+      "salads.subtitle": "Свежие и вкусные салаты — идеальное дополнение к блюдам",
+      "salads.achchiq_chuchuk": "Ачиқ-чучук",
+      "salads.achchiq_chuchuk_desc": "Классический салат из помидоров, огурцов, лука и перца — свежий и острый",
+      "salads.greek": "Греческий салат",
+      "salads.greek_desc": "Помидоры, огурцы, болгарский перец, лук, оливки, фета и оливковое масло",
+      "salads.suzma": "Сузма салат",
+      "salads.suzma_desc": "Сузьма (густой йогурт) с огурцами, зеленью, чесноком и специями",
+      "salads.serving": "Подаётся свежим с хлебом и зеленью",
+      "salads.fresh": "Только свежие ингредиенты каждый день",
+      // Tea (Чай)
+      "tea.title": "Чай",
+      "tea.subtitle": "Традиционный узбекский чай — зелёный, чёрный и с лимоном",
+      "tea.green": "Зелёный чай",
+      "tea.green_desc": "Ароматный зелёный чай, заваренный по-узбекски",
+      "tea.black": "Чёрный чай",
+      "tea.black_desc": "Крепкий чёрный чай с насыщенным вкусом",
+      "tea.lemon": "Чай с лимоном",
+      "tea.lemon_desc": "Освежающий чай с натуральным лимоном и сахаром",
+      "tea.serving": "Подаётся горячим в пиалах или стаканах",
+      "tea.traditional": "Традиционный узбекский чай — всегда свежий и ароматный",
+
+      // Пункты меню (короткие названия для карточек / списка категорий)
+      "menuItems.kaboblar": "Кабобы",
+      "menuItems.kaboblar_desc": "Сочные шашлыки из баранины, говядины и курицы, приготовленные на мангале",
+      "menuItems.lagmon": "Лагман",
+      "menuItems.lagmon_desc": "Тянутая домашняя лапша с мясом, овощами и насыщенным бульоном",
+      "menuItems.osh": "Плов (Lazir / Devzira)",
+      "menuItems.osh_desc": "Два вида плова на выбор: Lazir и Devzira (45–48 SAR)",
+      "menuItems.chuchvara": "Чучвара",
+      "menuItems.chuchvara_desc": "Домашние пельмени с мясом в бульоне, подаются со сметаной и зеленью",
+      "menuItems.mastava": "Мастава",
+      "menuItems.mastava_desc": "Густой суп с рисом, мясом, картофелем и овощами — как домашний",
+      "menuItems.qarsillama_somsa": "Қарсиллама сомса",
+      "menuItems.qarsillama_somsa_desc": "Хрустящая слоёная самса трёх видов: мясная, тыквенная и куриная",
+      "menuItems.salads": "Салаты",
+      "menuItems.salads_desc": "Ачиқ-чучук, греческий салат, сузма (15–22 SAR)",
+
+      // Напитки
+      "menuItems.kok_choy": "Чай",
+      "menuItems.kok_choy_desc": "Чай — это популярный напиток, приготовленный из чайных листьев и горячей воды. Он может быть расслабляющим и полезным.",
+      "menuItems.ayron": "Напитки",
+      "menuItems.ayron_desc": "Напитки — это жидкости, которые мы употребляем, чтобы утолить жажду и освежиться. Они могут быть горячими или холодными."
+    }
+  },
+
+  uz: {
+    translation: {
+      title: "UzbekHouse & QarsillamaSomsa",
+      subtitle: "Biz bilan bog'laning",
+      instagram_uzbekhouse: "Instagram • UzbekHouse",
+      instagram_qarsillama: "Instagram • QarsillamaSomsa",
+      telegram: "Telegram kanali",
+      location: "Makka — Bat'ha Quraysh",
+      Menu: "Menyu",
+
+      back_to_menu: "Menyuga qaytish",
+      back_home: "Bosh sahifaga",
+      order_via_telegram: "Telegram orqali buyurtma berish",
+      menu: "Menyu",
+      menu_subtitle: "Makkadagi haqiqiy o'zbek ta'mi • Uzbek House & Qarsillama Somsa",
+
+      "section.kaboblar": "Kaboblar",
+      "section.osh": "Osh",
+      "section.somsa": "Qarsillama somsa",
+      "section.salads": "Salatlar",
+      "section.teas": "Choylar",
+      "section.drinks": "Ichimliklar",
+
+      "kaboblar.subtitle": "Ko'mirda pishiriladi, yangi holda taqdim etiladi",
+      "kaboblar.qiyma": "Qiyima kabob (Lyulya-kebab)",
+      "kaboblar.qiyma_desc": "Qo'y go'shtidan maydalangan, piyoz va ziravorlar bilan nozik kabob",
+      "kaboblar.jaz": "Jaz kabob (bo'lakli)",
+      "kaboblar.jaz_desc": "Marinadlangan qo'y yoki mol go'shtidan shirali kabob",
+      "kaboblar.tovuq": "Tovuq kabob",
+      "kaboblar.tovuq_desc": "Ziravorlarda marinadlangan tovuq go'shtidan kabob",
+      "kaboblar.serving": "Yangi piyoz, non va sous bilan beriladi",
+      "kaboblar.cooked_on_coals": "Haqiqiy ko'mirda pishiriladi — hidi ta'riflab bo'lmaydi!",
+
+      "osh.subtitle": "Ikki xil osh: Lazir va Devzira — o'zingizga yoqqanini tanlang",
+      "osh.lazir": "Osh Lazir",
+      "osh.lazir_desc": "Lazir guruchida klassik osh — donador, xushbo'y, qo'y go'shti va sariq sabzi bilan",
+      "osh.devzira": "Osh Devzira",
+      "osh.devzira_desc": "Elit Devzira guruchida premium osh — boy ta'm, yumshoq qo'y go'shti",
+      "osh.serving": "Issiq holda achchiq-chuchuk, non va ayran bilan",
+      "osh.cooked_in_kazan": "Katta qozonda ochiq olovda pishiriladi",
+
+      "somsa.subtitle": "Uch xil: go'shtli, qovoqli va tovuqli — qarsillab, shirali",
+      "somsa.gosht": "Go'shtli somsa",
+      "somsa.gosht_desc": "Maydalangan qo'y go'shti, piyoz va klassik ziravorlar bilan shirali somsa",
+      "somsa.qovoq": "Qovoqli somsa",
+      "somsa.qovoq_desc": "Piyoz, ziravorlar va engil shirinlik bilan nozik qovoqli somsa",
+      "somsa.tovuq": "Tovuq somsa",
+      "somsa.tovuq_desc": "Tovuq, piyoz va sharqona ziravorlar bilan xushbo'y somsa",
+      "somsa.serving": "Issiq holda ko'kat, sous va yangi choy bilan",
+      "somsa.crispy": "Qarsillab chiqadigan ko'p qatlamli xamir — Qarsillama Somsa imzosi",
+
+      "salads.subtitle": "Yangi va mazali salatlar — taomlarga ajoyib qo'shimcha",
+      "salads.achchiq_chuchuk": "Achchiq-chuchuk",
+      "salads.achchiq_chuchuk_desc": "Pomidor, bodring, piyoz va qalampirdan tayyorlangan klassik o'zbek salati — yangi va o'tkir",
+      "salads.greek": "Yunon salati",
+      "salads.greek_desc": "Pomidor, bodring, qalampir, piyoz, zaytun, feta pishloq va zaytun moyi bilan",
+      "salads.suzma": "Suzma salat",
+      "salads.suzma_desc": "Suzma (qaymoqsimon yogurt), bodring, ko'katlar, sarimsoq va ziravorlar bilan",
+      "salads.serving": "Yangi holda non va ko'katlar bilan beriladi",
+      "salads.fresh": "Har kuni faqat yangi masalliqlar",
+      // Tea (Choy)
+      "tea.title": "Choy",
+      "tea.subtitle": "An'anaviy o'zbek choyi — yashil, qora va limonli",
+      "tea.green": "Yashil choy",
+      "tea.green_desc": "Xushbo'y yashil choy, o'zbekcha uslubda damlangan",
+      "tea.black": "Qora choy",
+      "tea.black_desc": "Boy ta'mli qora choy",
+      "tea.lemon": "Limonli choy",
+      "tea.lemon_desc": "Tabiiy limon va shakar bilan salqinlashtiruvchi choy",
+      "tea.serving": "Piyola yoki stakanda issiq holda beriladi",
+      "tea.traditional": "An'anaviy o'zbek choyi — har doim yangi va xushbo'y",
+
+      "menuItems.kaboblar": "Kaboblar",
+      "menuItems.kaboblar_desc": "Qo'y, mol va tovuq go'shtidan shirali kaboblar, mangalda pishirilgan",
+      "menuItems.lagmon": "Lag'mon",
+      "menuItems.lagmon_desc": "Go'sht, sabzavotlar va boy bulon bilan tortilgan uy qo'l lag'mon",
+      "menuItems.osh": "Osh (Lazir / Devzira)",
+      "menuItems.osh_desc": "Ikki turdagi osh: Lazir va Devzira (45–48 SAR)",
+      "menuItems.chuchvara": "Chuchvara",
+      "menuItems.chuchvara_desc": "Go'shtli uy chuchvarasi bulonda, smetana va ko'katlar bilan",
+      "menuItems.mastava": "Mastava",
+      "menuItems.mastava_desc": "Guruch, go'sht, kartoshka va sabzavotlar bilan quyuq sho'rva — uy ta'mi",
+      "menuItems.qarsillama_somsa": "Qarsillama somsa",
+      "menuItems.qarsillama_somsa_desc": "Uch xil qarsillab chiqadigan somsa: go'shtli, qovoqli va tovuqli",
+      "menuItems.salads": "Salatlar",
+      "menuItems.salads_desc": "Achchiq-chuchuk, yunon salati va suzma (15–22 SAR)",
+
+      "menuItems.kok_choy": "Choylar",
+      "menuItems.kok_choy_desc": "Choy — choy barglari va issiq suvdan tayyorlanadigan mashhur ichimlik. U tinchlantiruvchi va foydali bo‘lishi mumkin.",
+      "menuItems.ayron": "Ichimliklar",
+      "menuItems.ayron_desc": "Ichimliklar — chanqoqni qondirish va tetiklanish uchun ichiladigan suyuqliklardir. Ular issiq yoki sovuq bo‘lishi mumkin."
+    }
+  },
+
+  en: {
+    translation: {
+      title: "UzbekHouse & QarsillamaSomsa",
+      subtitle: "Contact us",
+      instagram_uzbekhouse: "Instagram • UzbekHouse",
+      instagram_qarsillama: "Instagram • QarsillamaSomsa",
+      telegram: "Telegram channel",
+      location: "Mecca — Batha Quraysh",
+      Menu: "Menu",
+
+      back_to_menu: "Back to menu",
+      back_home: "Back to home",
+      order_via_telegram: "Order via Telegram",
+      menu: "Menu",
+      menu_subtitle: "Authentic Uzbek taste in Mecca • Uzbek House & Qarsillama Somsa",
+
+      "section.kaboblar": "Kebabs",
+      "section.osh": "Pilaf",
+      "section.somsa": "Qarsillama Somsa",
+      "section.salads": "Salads",
+      "section.teas": "Teas",
+      "section.drinks": "Drinks",
+
+      "kaboblar.subtitle": "Cooked on charcoal, served fresh",
+      "kaboblar.qiyma": "Qiyma Kebab (Lula-kebab)",
+      "kaboblar.qiyma_desc": "Tender minced lamb kebab with onion and spices",
+      "kaboblar.jaz": "Jaz Kebab (chunk)",
+      "kaboblar.jaz_desc": "Juicy marinated lamb or beef kebab",
+      "kaboblar.tovuq": "Chicken Kebab",
+      "kaboblar.tovuq_desc": "Spiced marinated chicken kebab",
+      "kaboblar.serving": "Served with fresh onion, flatbread and sauce",
+      "kaboblar.cooked_on_coals": "Cooked on real charcoal — the aroma is indescribable!",
+
+      "osh.subtitle": "Two types of pilaf: Lazir and Devzira — choose your favorite",
+      "osh.lazir": "Lazir Pilaf",
+      "osh.lazir_desc": "Classic pilaf on Lazir rice — fluffy, aromatic, with lamb and yellow carrot",
+      "osh.devzira": "Devzira Pilaf",
+      "osh.devzira_desc": "Premium pilaf on elite Devzira rice — rich flavor, tender lamb",
+      "osh.serving": "Served hot with achchiq-chuchuk, flatbread and ayran",
+      "osh.cooked_in_kazan": "Cooked in a large kazan over open fire",
+
+      "somsa.subtitle": "Three varieties: meat, pumpkin and chicken — crispy and juicy",
+      "somsa.gosht": "Meat Somsa",
+      "somsa.gosht_desc": "Juicy samsa with chopped lamb, onion and classic spices",
+      "somsa.qovoq": "Pumpkin Somsa",
+      "somsa.qovoq_desc": "Tender pumpkin samsa with onion, spices and light sweetness",
+      "somsa.tovuq": "Chicken Somsa",
+      "somsa.tovuq_desc": "Aromatic chicken samsa with onion and oriental spices",
+      "somsa.serving": "Served hot with greens, sauce and fresh tea",
+      "somsa.crispy": "Crispy multi-layered dough — signature Qarsillama Somsa recipe",
+
+      "salads.subtitle": "Fresh and tasty salads — perfect side dishes",
+      "salads.achchiq_chuchuk": "Achchiq-Chuchuk",
+      "salads.achchiq_chuchuk_desc": "Classic Uzbek salad with tomatoes, cucumbers, onion and pepper — fresh and spicy",
+      "salads.greek": "Greek Salad",
+      "salads.greek_desc": "Tomatoes, cucumbers, bell pepper, onion, olives, feta and olive oil",
+      "salads.suzma": "Suzma Salad",
+      "salads.suzma_desc": "Suzma (thick yogurt) with cucumbers, herbs, garlic and spices",
+      "salads.serving": "Served fresh with bread and greens",
+      "salads.fresh": "Fresh ingredients every day",
+
+      "menuItems.kaboblar": "Kebabs",
+      "menuItems.kaboblar_desc": "Juicy kebabs from lamb, beef and chicken, grilled on charcoal",
+      "menuItems.lagmon": "Lagman",
+      "menuItems.lagmon_desc": "Hand-pulled homemade noodles with meat, vegetables and rich broth",
+      "menuItems.osh": "Pilaf (Lazir / Devzira)",
+      "menuItems.osh_desc": "Two types of pilaf: Lazir and Devzira (45–48 SAR)",
+      "menuItems.chuchvara": "Chuchvara",
+      "menuItems.chuchvara_desc": "Homemade dumplings with meat in broth, served with sour cream and greens",
+      "menuItems.mastava": "Mastava",
+      "menuItems.mastava_desc": "Thick soup with rice, meat, potatoes and vegetables — homemade style",
+      "menuItems.qarsillama_somsa": "Qarsillama Somsa",
+      "menuItems.qarsillama_somsa_desc": "Crispy layered samsa in three varieties: meat, pumpkin and chicken",
+      "menuItems.salads": "Salads",
+      "menuItems.salads_desc": "Achchiq-chuchuk, Greek salad and suzma (15–22 SAR)",
+      // Tea
+      "tea.title": "Tea",
+      "tea.subtitle": "Traditional Uzbek tea — green, black and with lemon",
+      "tea.green": "Green Tea",
+      "tea.green_desc": "Aromatic green tea brewed in Uzbek style",
+      "tea.black": "Black Tea",
+      "tea.black_desc": "Strong black tea with rich flavor",
+      "tea.lemon": "Lemon Tea",
+      "tea.lemon_desc": "Refreshing tea with natural lemon and sugar",
+      "tea.serving": "Served hot in bowls or glasses",
+      "tea.traditional": "Traditional Uzbek tea — always fresh and aromatic",
+
+      "menuItems.kok_choy": "Tea",
+      "menuItems.kok_choy_desc": "Tea is a popular drink made from tea leaves and hot water. It can be relaxing and healthy.",
+      "menuItems.ayron": "Drinks",
+      "menuItems.ayron_desc": "Drinks are liquids we consume to stay hydrated and refreshed. They can be hot or cold, such as water, juice, or tea."
+    }
+  }
+};
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources,
+    fallbackLng: "ru",
+    interpolation: {
+      escapeValue: false, // React уже экранирует
+    },
+    detection: {
+      order: ["localStorage", "navigator"],
+      caches: ["localStorage"],
+    },
+  });
+
+export default i18n;

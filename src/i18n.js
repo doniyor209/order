@@ -19,7 +19,6 @@ const resources = {
       menu: "Меню",
       menu_subtitle: "Настоящий вкус Узбекистана в Мекке • Uzbek House & Qarsillama Somsa",
 
-      // Разделы меню (заголовки категорий)
       "section.kaboblar": "Шашлыки / Кабобы",
       "section.osh": "Плов",
       "section.somsa": "Қарсиллама сомса",
@@ -27,7 +26,6 @@ const resources = {
       "section.teas": "Чойлар",
       "section.drinks": "Ичимликлар",
 
-      // Kaboblar
       "kaboblar.subtitle": "Готовим на углях, подаём свежими",
       "kaboblar.qiyma": "Қийма кабоб (Люля-кебаб)",
       "kaboblar.qiyma_desc": "Нежный молотый шашлык из баранины с луком и специями",
@@ -38,7 +36,6 @@ const resources = {
       "kaboblar.serving": "Подаётся с свежим луком, лепёшкой и соусом",
       "kaboblar.cooked_on_coals": "Готовится на настоящих углях — аромат не передать словами!",
 
-      // Osh / Plov
       "osh.subtitle": "Два вида плова: Lazir и Devzira — выбирайте свой любимый",
       "osh.lazir": "Ош Lazir (Лазер)",
       "osh.lazir_desc": "Классический плов на рисе Лазер — рассыпчатый, ароматный, с бараниной и жёлтой морковью",
@@ -47,7 +44,6 @@ const resources = {
       "osh.serving": "Подаётся горячим с ачичуком, лепёшкой и айраном",
       "osh.cooked_in_kazan": "Готовится в большом казане на открытом огне",
 
-      // Somsa
       "somsa.subtitle": "Три вида: мясная, тыквенная и куриная — хрустящие и сочные",
       "somsa.gosht": "Го'штли сомса",
       "somsa.gosht_desc": "Сочная самса с рубленой бараниной, луком и классическими специями",
@@ -58,7 +54,6 @@ const resources = {
       "somsa.serving": "Подаётся горячей с зеленью, соусом и свежим чаем",
       "somsa.crispy": "Хрустящее многослойное тесто — фирменный рецепт Qarsillama Somsa",
 
-      // Salads
       "salads.subtitle": "Свежие и вкусные салаты — идеальное дополнение к блюдам",
       "salads.achchiq_chuchuk": "Ачиқ-чучук",
       "salads.achchiq_chuchuk_desc": "Классический салат из помидоров, огурцов, лука и перца — свежий и острый",
@@ -68,7 +63,7 @@ const resources = {
       "salads.suzma_desc": "Сузьма (густой йогурт) с огурцами, зеленью, чесноком и специями",
       "salads.serving": "Подаётся свежим с хлебом и зеленью",
       "salads.fresh": "Только свежие ингредиенты каждый день",
-      // Tea (Чай)
+
       "tea.title": "Чай",
       "tea.subtitle": "Традиционный узбекский чай — зелёный, чёрный и с лимоном",
       "tea.green": "Зелёный чай",
@@ -80,7 +75,6 @@ const resources = {
       "tea.serving": "Подаётся горячим в пиалах или стаканах",
       "tea.traditional": "Традиционный узбекский чай — всегда свежий и ароматный",
 
-      // Пункты меню (короткие названия для карточек / списка категорий)
       "menuItems.kaboblar": "Кабобы",
       "menuItems.kaboblar_desc": "Сочные шашлыки из баранины, говядины и курицы, приготовленные на мангале",
       "menuItems.lagmon": "Лагман",
@@ -95,8 +89,6 @@ const resources = {
       "menuItems.qarsillama_somsa_desc": "Хрустящая слоёная самса трёх видов: мясная, тыквенная и куриная",
       "menuItems.salads": "Салаты",
       "menuItems.salads_desc": "Ачиқ-чучук, греческий салат, сузма (15–22 SAR)",
-
-      // Напитки
       "menuItems.kok_choy": "Чай",
       "menuItems.kok_choy_desc": "Чай — это популярный напиток, приготовленный из чайных листьев и горячей воды. Он может быть расслабляющим и полезным.",
       "menuItems.ayron": "Напитки",
@@ -164,7 +156,7 @@ const resources = {
       "salads.suzma_desc": "Suzma (qaymoqsimon yogurt), bodring, ko'katlar, sarimsoq va ziravorlar bilan",
       "salads.serving": "Yangi holda non va ko'katlar bilan beriladi",
       "salads.fresh": "Har kuni faqat yangi masalliqlar",
-      // Tea (Choy)
+
       "tea.title": "Choy",
       "tea.subtitle": "An'anaviy o'zbek choyi — yashil, qora va limonli",
       "tea.green": "Yashil choy",
@@ -190,7 +182,6 @@ const resources = {
       "menuItems.qarsillama_somsa_desc": "Uch xil qarsillab chiqadigan somsa: go'shtli, qovoqli va tovuqli",
       "menuItems.salads": "Salatlar",
       "menuItems.salads_desc": "Achchiq-chuchuk, yunon salati va suzma (15–22 SAR)",
-
       "menuItems.kok_choy": "Choylar",
       "menuItems.kok_choy_desc": "Choy — choy barglari va issiq suvdan tayyorlanadigan mashhur ichimlik. U tinchlantiruvchi va foydali bo‘lishi mumkin.",
       "menuItems.ayron": "Ichimliklar",
@@ -259,6 +250,17 @@ const resources = {
       "salads.serving": "Served fresh with bread and greens",
       "salads.fresh": "Fresh ingredients every day",
 
+      "tea.title": "Tea",
+      "tea.subtitle": "Traditional Uzbek tea — green, black and with lemon",
+      "tea.green": "Green Tea",
+      "tea.green_desc": "Aromatic green tea brewed in Uzbek style",
+      "tea.black": "Black Tea",
+      "tea.black_desc": "Strong black tea with rich flavor",
+      "tea.lemon": "Lemon Tea",
+      "tea.lemon_desc": "Refreshing tea with natural lemon and sugar",
+      "tea.serving": "Served hot in bowls or glasses",
+      "tea.traditional": "Traditional Uzbek tea — always fresh and aromatic",
+
       "menuItems.kaboblar": "Kebabs",
       "menuItems.kaboblar_desc": "Juicy kebabs from lamb, beef and chicken, grilled on charcoal",
       "menuItems.lagmon": "Lagman",
@@ -273,18 +275,6 @@ const resources = {
       "menuItems.qarsillama_somsa_desc": "Crispy layered samsa in three varieties: meat, pumpkin and chicken",
       "menuItems.salads": "Salads",
       "menuItems.salads_desc": "Achchiq-chuchuk, Greek salad and suzma (15–22 SAR)",
-      // Tea
-      "tea.title": "Tea",
-      "tea.subtitle": "Traditional Uzbek tea — green, black and with lemon",
-      "tea.green": "Green Tea",
-      "tea.green_desc": "Aromatic green tea brewed in Uzbek style",
-      "tea.black": "Black Tea",
-      "tea.black_desc": "Strong black tea with rich flavor",
-      "tea.lemon": "Lemon Tea",
-      "tea.lemon_desc": "Refreshing tea with natural lemon and sugar",
-      "tea.serving": "Served hot in bowls or glasses",
-      "tea.traditional": "Traditional Uzbek tea — always fresh and aromatic",
-
       "menuItems.kok_choy": "Tea",
       "menuItems.kok_choy_desc": "Tea is a popular drink made from tea leaves and hot water. It can be relaxing and healthy.",
       "menuItems.ayron": "Drinks",
@@ -300,7 +290,7 @@ i18n
     resources,
     fallbackLng: "ru",
     interpolation: {
-      escapeValue: false, // React уже экранирует
+      escapeValue: false,
     },
     detection: {
       order: ["localStorage", "navigator"],

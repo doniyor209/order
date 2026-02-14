@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Menu.css';
+import { drinks } from '../assets';
+
 
 function Menu() {
   const { t, i18n } = useTranslation();
@@ -75,8 +77,8 @@ function Menu() {
     {
       name: t('menuItems.ayron') || 'Айрон',
       description: t('menuItems.ayron_desc') || 'Прохладный айран',
-      price: '10 SAR',
-      img: 'https://images.unsplash.com/photo-1626202450897-28d8e8c5e0f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      price: '2-5 SAR',
+      img: drinks,
       path: ''   // ← сюда сам поставишь, если нужно
     }
   ];

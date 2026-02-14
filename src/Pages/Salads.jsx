@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Salads.css';
+import { q, w, ePng } from '../assets';
+
 
 function Salads() {
   const { t, i18n } = useTranslation();
@@ -14,19 +16,19 @@ function Salads() {
       title: t('salads.achchiq_chuchuk'),
       description: t('salads.achchiq_chuchuk_desc'),
       price: '15 SAR',
-      img: '../../w.png',
+      img: w,
     },
     {
       title: t('salads.greek'),
       description: t('salads.greek_desc'),
       price: '22 SAR',
-      img: '../../q.png',
+      img: q,
     },
     {
       title: t('salads.suzma'),
       description: t('salads.suzma_desc'),
       price: '18 SAR',
-      img: '../../e.png',
+      img: ePng,
     },
   ];
 
@@ -81,7 +83,7 @@ function Salads() {
           <p>{t('salads.fresh')}</p>
         </div>
 
-       
+
       </div>
     </div>
   );

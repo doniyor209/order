@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import './Somsa.css'; // создай этот файл или используй общий стиль (например Kaboblar.css)
+import './Somsa.css';
+import { d, e, f } from '../assets';
+// import { e, f, d } from './assets'; // Импортируем изображения
 
 function Somsa() {
   const { t, i18n } = useTranslation();
@@ -14,19 +16,19 @@ function Somsa() {
       title: t('somsa.gosht'),
       description: t('somsa.gosht_desc'),
       price: '3 SAR',
-      img: '../../e.JPG', // мясная
+      img: e, // мясная
     },
     {
       title: t('somsa.qovoq'),
       description: t('somsa.qovoq_desc'),
       price: '2 SAR',
-      img: '../../f.JPG', // тыквенная (пример, можно заменить)
+      img: f, // тыквенная
     },
     {
       title: t('somsa.tovuq'),
       description: t('somsa.tovuq_desc'),
       price: '3 SAR',
-      img: '../../d.JPG', // куриная (можно заменить)
+      img: d, // куриная
     },
   ];
 
@@ -56,7 +58,7 @@ function Somsa() {
         <p className="dish-subtitle">{t('somsa.subtitle')}</p>
 
         {/* Сетка самсы */}
-        <div className="kaboblar-grid"> {/* можно переименовать класс в somsa-grid в CSS */}
+        <div className="kaboblar-grid">
           {somsaItems.map((item, index) => (
             <div key={index} className="kabob-item">
               <img
@@ -80,8 +82,6 @@ function Somsa() {
           <p>{t('somsa.crispy')}</p>
         </div>
 
-        {/* Кнопка заказа */}
-        
       </div>
     </div>
   );

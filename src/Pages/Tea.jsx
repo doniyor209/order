@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Tea.css';
+// import { green, black, limon } from '../../assets/images'; 
+import { green, black, limon } from '../assets';
+
 
 function Tea() {
   const { t, i18n } = useTranslation();
@@ -14,19 +17,19 @@ function Tea() {
       title: t('tea.green'),
       description: t('tea.green_desc'),
       price: '2 SAR',
-      img: '../../green.png',
+      img: green,
     },
     {
       title: t('tea.black'),
       description: t('tea.black_desc'),
       price: ' 2 SAR',
-      img: '../../black.png',
+      img: black,
     },
     {
       title: t('tea.lemon'),
       description: t('tea.lemon_desc'),
       price: '5 SAR',
-      img: '../../limon.png',
+      img: limon,
     },
   ];
 

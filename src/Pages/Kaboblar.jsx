@@ -3,8 +3,6 @@ import { useTranslation } from 'react-i18next';
 import './Kaboblar.css';
 // import { Nomi } from '../assets';
 
-
-
 function Kaboblar() {
   const { t, i18n } = useTranslation();
 
@@ -50,15 +48,13 @@ function Kaboblar() {
           </select>
         </div>
 
-        <img src={Nomi} alt="" />
-
         {/* Кнопка назад */}
         <Link to="/menu" className="back-btn">
           ← {t('back_to_menu')}
         </Link>
 
         {/* Заголовок */}
-        <h1 className="dish-title">{t('kaboblar.title')}</h1>
+        <h1 className="dish-title">{t('section.kaboblar')}</h1>
         <p className="dish-subtitle">{t('kaboblar.subtitle')}</p>
 
         {/* Сетка шашлыков */}
@@ -85,8 +81,6 @@ function Kaboblar() {
           <p>{t('kaboblar.serving')}</p>
           <p>{t('kaboblar.cooked_on_coals')}</p>
         </div>
-
-       
 
       </div>
     </div>

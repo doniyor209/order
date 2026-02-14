@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Kaboblar.css';
+// import { Nomi } from '../assets';
+
+
 
 function Kaboblar() {
   const { t, i18n } = useTranslation();
@@ -46,6 +49,8 @@ function Kaboblar() {
             <option value="en">English (EN)</option>
           </select>
         </div>
+
+        <img src={Nomi} alt="" />
 
         {/* Кнопка назад */}
         <Link to="/menu" className="back-btn">

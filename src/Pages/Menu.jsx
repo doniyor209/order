@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Menu.css';
-import { drinks } from '../assets';
+import { back, drinks, salads, teas } from '../assets';
+
 
 
 function Menu() {
@@ -37,21 +38,21 @@ function Menu() {
       name: t('menuItems.chuchvara'),
       description: t('menuItems.chuchvara_desc'),
       price: '25 SAR',
-      img: 'https://c8.alamy.com/comp/B373NJ/chuchvara-or-ravioli-and-sour-cream-at-a-chaikhana-in-the-siab-market-B373NJ.jpg',
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwcPuousHK-BiQTrAqiuFO2ssqwJhQA55mJ_1LbvytWjTCYxe04_nZ-c7&s=10',
       path: ''
     },
     {
       name: t('menuItems.mastava'),
       description: t('menuItems.mastava_desc'),
       price: '15 SAR',
-      img: 'https://thumbs.dreamstime.com/b/nutrient-soup-meat-rice-vegetables-mastava-uzbek-kitchen-81115254.jpg',
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrY0cJcdf7i0-e1VznZkg0RMbuwti5e0yQMbNa7NGi-NbiVVHYrCQ1wg&s=10',
       path: ''
     },
     {
       name: t('menuItems.qarsillama_somsa'),
       description: t('menuItems.qarsillama_somsa_desc'),
       price: '8 – 12 SAR',
-      img: '../../back.png',
+      img: back,
       path: '/menu/Somsa'
     },
 
@@ -60,7 +61,7 @@ function Menu() {
       name: t('menuItems.salads') || 'Ачичук',
       description: t('menuItems.salads_desc') || 'Помидоры, огурцы, лук, зелень, перец',
       price: '15 SAR',
-      img: '../../salads.png',
+      img: salads,
       path: '/menu/Salads'   // ← сюда сам поставишь, если нужно
     },
 
@@ -69,7 +70,7 @@ function Menu() {
       name: t('menuItems.kok_choy') || 'Кўк чой',
       description: t('menuItems.kok_choy_desc') || 'Зелёный чай',
       price: '8 SAR',
-      img: '../../teas.png',
+      img: teas,
       path: '/menu/Tea'   // ← сюда сам поставишь, если нужно
     },
 
@@ -79,7 +80,7 @@ function Menu() {
       description: t('menuItems.ayron_desc') || 'Прохладный айран',
       price: '2-5 SAR',
       img: drinks,
-      path: ''   // ← сюда сам поставишь, если нужно
+      path: '/menu/drinks'   // ← сюда сам поставишь, если нужно
     }
   ];
 

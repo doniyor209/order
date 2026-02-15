@@ -24,7 +24,7 @@ const resources = {
       "section.somsa": "Қарсиллама сомса",
       "section.salads": "Салаты",
       "section.teas": "Чойлар",
-      "section.drinks": "Ичимликлар",
+      "section.drinks": "Напитки",
 
       "kaboblar.subtitle": "Готовим на углях, подаём свежими",
       "kaboblar.qiyma": "Қийма кабоб (Люля-кебаб)",
@@ -63,6 +63,7 @@ const resources = {
       "salads.suzma_desc": "Сузьма (густой йогурт) с огурцами, зеленью, чесноком и специями",
       "salads.serving": "Подаётся свежим с хлебом и зеленью",
       "salads.fresh": "Только свежие ингредиенты каждый день",
+      "salads.title": "Салаты", // Добавленный перевод
 
       "tea.title": "Чай",
       "tea.subtitle": "Традиционный узбекский чай — зелёный, чёрный и с лимоном",
@@ -74,6 +75,22 @@ const resources = {
       "tea.lemon_desc": "Освежающий чай с натуральным лимоном и сахаром",
       "tea.serving": "Подаётся горячим в пиалах или стаканах",
       "tea.traditional": "Традиционный узбекский чай — всегда свежий и ароматный",
+
+      // Добавленные переводы для напитков
+      "drinks.title": "Напитки",
+      "drinks.subtitle": "Освежающие напитки для любого вкуса",
+      "drinks.coca": "Coca-Cola",
+      "drinks.coca_desc": "Классическая освежающая кола со льдом",
+      "drinks.pepsi": "Pepsi",
+      "drinks.pepsi_desc": "Насыщенный вкус легендарной пепси",
+      "drinks.mirinda": "Mirinda",
+      "drinks.mirinda_desc": "Апельсиновый вкус с освежающими пузырьками",
+      "drinks.kinza": "Кинза",
+      "drinks.kinza_desc": "Традиционный узбекский освежающий напиток",
+      "drinks.water": "Вода",
+      "drinks.water_desc": "Чистая питьевая вода",
+      "drinks.serving": "Подаётся охлаждённым со льдом",
+      "drinks.additional": "Спросите о других доступных напитках",
 
       "menuItems.kaboblar": "Кабобы",
       "menuItems.kaboblar_desc": "Сочные шашлыки из баранины, говядины и курицы, приготовленные на мангале",
@@ -156,6 +173,7 @@ const resources = {
       "salads.suzma_desc": "Suzma (qaymoqsimon yogurt), bodring, ko'katlar, sarimsoq va ziravorlar bilan",
       "salads.serving": "Yangi holda non va ko'katlar bilan beriladi",
       "salads.fresh": "Har kuni faqat yangi masalliqlar",
+      "salads.title": "Salatlar", // Добавленный перевод
 
       "tea.title": "Choy",
       "tea.subtitle": "An'anaviy o'zbek choyi — yashil, qora va limonli",
@@ -167,6 +185,22 @@ const resources = {
       "tea.lemon_desc": "Tabiiy limon va shakar bilan salqinlashtiruvchi choy",
       "tea.serving": "Piyola yoki stakanda issiq holda beriladi",
       "tea.traditional": "An'anaviy o'zbek choyi — har doim yangi va xushbo'y",
+
+      // Добавленные переводы для напитков
+      "drinks.title": "Ichimliklar",
+      "drinks.subtitle": "Har qanday ta'm uchun tetiklantiruvchi ichimliklar",
+      "drinks.coca": "Coca-Cola",
+      "drinks.coca_desc": "Muz bilan klassik tetiklantiruvchi kola",
+      "drinks.pepsi": "Pepsi",
+      "drinks.pepsi_desc": "Afsonaviy pepsining boy ta'mi",
+      "drinks.mirinda": "Mirinda",
+      "drinks.mirinda_desc": "Apelsin ta'mi bilan tetiklantiruvchi ichimlik",
+      "drinks.kinza": "Kinza",
+      "drinks.kinza_desc": "An'anaviy o'zbek tetiklantiruvchi ichimligi",
+      "drinks.water": "Suv",
+      "drinks.water_desc": "Toza ichimlik suvi",
+      "drinks.serving": "Muz bilan sovutilgan holda beriladi",
+      "drinks.additional": "Boshqa mavjud ichimliklar haqida so'rang",
 
       "menuItems.kaboblar": "Kaboblar",
       "menuItems.kaboblar_desc": "Qo'y, mol va tovuq go'shtidan shirali kaboblar, mangalda pishirilgan",
@@ -249,6 +283,7 @@ const resources = {
       "salads.suzma_desc": "Suzma (thick yogurt) with cucumbers, herbs, garlic and spices",
       "salads.serving": "Served fresh with bread and greens",
       "salads.fresh": "Fresh ingredients every day",
+      "salads.title": "Salads", // Добавленный перевод
 
       "tea.title": "Tea",
       "tea.subtitle": "Traditional Uzbek tea — green, black and with lemon",
@@ -260,6 +295,22 @@ const resources = {
       "tea.lemon_desc": "Refreshing tea with natural lemon and sugar",
       "tea.serving": "Served hot in bowls or glasses",
       "tea.traditional": "Traditional Uzbek tea — always fresh and aromatic",
+
+      // Добавленные переводы для напитков
+      "drinks.title": "Drinks",
+      "drinks.subtitle": "Refreshing drinks for every taste",
+      "drinks.coca": "Coca-Cola",
+      "drinks.coca_desc": "Classic refreshing cola with ice",
+      "drinks.pepsi": "Pepsi",
+      "drinks.pepsi_desc": "Rich taste of legendary pepsi",
+      "drinks.mirinda": "Mirinda",
+      "drinks.mirinda_desc": "Orange flavor with refreshing bubbles",
+      "drinks.kinza": "Kinza",
+      "drinks.kinza_desc": "Traditional Uzbek refreshing drink",
+      "drinks.water": "Water",
+      "drinks.water_desc": "Pure drinking water",
+      "drinks.serving": "Served chilled with ice",
+      "drinks.additional": "Ask about other available drinks",
 
       "menuItems.kaboblar": "Kebabs",
       "menuItems.kaboblar_desc": "Juicy kebabs from lamb, beef and chicken, grilled on charcoal",

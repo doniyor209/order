@@ -9,6 +9,8 @@ import Osh from "./Pages/Osh";
 import Somsa from "./Pages/Somsa";
 import Salads from "./Pages/Salads";
 import Tea from "./Pages/Tea";
+import Drinks from "./Pages/Drinks";
+
 
 function Home() {
   const { t, i18n } = useTranslation();
@@ -125,6 +127,8 @@ function App() {
         <Route path="/menu/somsa" element={<Somsa />} />
         <Route path="/menu/salads" element={<Salads />} />
         <Route path="/menu/tea" element={<Tea />} />
+        {/* Добавленный роут для напитков */}
+        <Route path="/menu/drinks" element={<Drinks />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

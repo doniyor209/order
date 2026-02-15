@@ -17,3 +17,10 @@ export { default as teas } from './images/teas.png';
 export { default as w } from './images/w.png';
 export { default as drinks } from './images/drinks.png';
 // export { default as dPng } from './images/d.png'; // Этот файл не существует
+
+// Добавленные экспорты для напитков
+export { default as coca } from './images/cola.png';
+export { default as pepsi } from './images/pepsi.png';
+export { default as suv } from './images/suv.png';
+export { default as kinzaDrink } from './images/kinza-drink.png';
+export { default as mirinda } from './images/mirinda.png';

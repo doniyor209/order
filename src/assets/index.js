@@ -16,6 +16,8 @@ export { default as salads } from './images/salads.png';
 export { default as teas } from './images/teas.png';
 export { default as w } from './images/w.png';
 export { default as drinks } from './images/drinks.png';
+export { default as uzb } from './images/uzb.jpg';
+export { default as Lagman } from './images/Lagman.jpg';
 // export { default as dPng } from './images/d.png'; // Этот файл не существует
 
 // Добавленные экспорты для напитков

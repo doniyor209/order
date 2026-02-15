@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Menu.css';
-import { back, drinks, salads, teas } from '../assets';
+import { back, drinks, Lagman, salads, teas, uzb } from '../assets';
 
 
 
@@ -24,14 +24,14 @@ function Menu() {
       name: t('menuItems.lagmon'),
       description: t('menuItems.lagmon_desc'),
       price: '20 SAR',
-      img: 'https://arbuz.com/wp-content/uploads/2010/01/Lagman.jpg',
+      img: Lagman,
       path: ''
     },
     {
       name: t('menuItems.osh'),
       description: t('menuItems.osh_desc'),
       price: '45 – 48 SAR',
-      img: 'https://arbuz.com/wp-content/uploads/2009/12/Uzbek-Palov.jpg',
+      img: uzb,
       path: '/menu/osh'
     },
     {

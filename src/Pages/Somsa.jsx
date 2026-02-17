@@ -15,19 +15,19 @@ function Somsa() {
     {
       title: t('somsa.gosht'),
       description: t('somsa.gosht_desc'),
-      price: '3 SAR',
+      price: '4 SAR',
       img: e, // мясная
     },
     {
       title: t('somsa.qovoq'),
       description: t('somsa.qovoq_desc'),
-      price: '2 SAR',
+      price: '3 SAR',
       img: f, // тыквенная
     },
     {
       title: t('somsa.tovuq'),
       description: t('somsa.tovuq_desc'),
-      price: '3 SAR',
+      price: '4 SAR',
       img: d, // куриная
     },
   ];

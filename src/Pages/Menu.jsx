@@ -16,7 +16,7 @@ function Menu() {
     {
       name: t('menuItems.kaboblar'),
       description: t('menuItems.kaboblar_desc'),
-      price: '35 – 55 SAR',
+      price: '10-12 SAR',
       img: 'https://petersfoodadventures.com/wp-content/uploads/2017/02/russian-shashlik.jpg',
       path: '/menu/kaboblar'
     },
@@ -30,14 +30,14 @@ function Menu() {
     {
       name: t('menuItems.osh'),
       description: t('menuItems.osh_desc'),
-      price: '45 – 48 SAR',
+      price: '25 SAR',
       img: uzb,
       path: '/menu/osh'
     },
     {
       name: t('menuItems.chuchvara'),
       description: t('menuItems.chuchvara_desc'),
-      price: '25 SAR',
+      price: '20 SAR',
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwcPuousHK-BiQTrAqiuFO2ssqwJhQA55mJ_1LbvytWjTCYxe04_nZ-c7&s=10',
       path: ''
     },
@@ -51,7 +51,7 @@ function Menu() {
     {
       name: t('menuItems.qarsillama_somsa'),
       description: t('menuItems.qarsillama_somsa_desc'),
-      price: '8 – 12 SAR',
+      price: '3-4 SAR',
       img: back,
       path: '/menu/Somsa'
     },

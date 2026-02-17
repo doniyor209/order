@@ -18,12 +18,6 @@ function Kaboblar() {
       img: 'https://tarnov.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F88a80d9c-41a9-4b90-8913-aa7ae9478677&w=640&q=75',
     },
     {
-      title: t('kaboblar.jaz'),
-      description: t('kaboblar.jaz_desc'),
-      price: '12 SAR',
-      img: 'https://tarnov.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F4256df23-0ab9-426c-a054-58853590d2d3&w=640&q=75',
-    },
-    {
       title: t('kaboblar.tovuq'),
       description: t('kaboblar.tovuq_desc'),
       price: '10-12 SAR',

@@ -40,7 +40,7 @@ const resources = {
       "osh.lazir": "Ош Lazir (Лазер)",
       "osh.lazir_desc": "Классический плов на рисе Лазер — рассыпчатый, ароматный, с бараниной и жёлтой морковью",
       "osh.devzira": "Ош Devzira",
-      "osh.devzira_desc": "Премиум-плов на элитном рисе Девзира — очень насыщенный вкус, нежная баранина",
+      "osh.devzira_desc": "Премиум-плов на элитном рисе Девзира — очень насыщенный вкус, нежная баранина; Только для заказа",
       "osh.serving": "Подаётся горячим с ачичуком, лепёшкой и айраном",
       "osh.cooked_in_kazan": "Готовится в большом казане на открытом огне",
 
@@ -207,7 +207,7 @@ const resources = {
       "menuItems.lagmon": "Lag'mon",
       "menuItems.lagmon_desc": "Go'sht, sabzavotlar va boy bulon bilan tortilgan uy qo'l lag'mon",
       "menuItems.osh": "Osh (Lazir / Devzira)",
-      "menuItems.osh_desc": "Ikki turdagi osh: Lazir va Devzira (45–48 SAR)",
+      "menuItems.osh_desc": "Ikki turdagi osh: Lazir va Devzira (25–30 SAR)",
       "menuItems.chuchvara": "Chuchvara",
       "menuItems.chuchvara_desc": "Go'shtli uy chuchvarasi bulonda, smetana va ko'katlar bilan",
       "menuItems.mastava": "Mastava",

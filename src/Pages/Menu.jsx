@@ -16,7 +16,7 @@ function Menu() {
     {
       name: t('menuItems.kaboblar'),
       description: t('menuItems.kaboblar_desc'),
-      price: '10-12 SAR',
+      price: '10 SAR',
       img: 'https://petersfoodadventures.com/wp-content/uploads/2017/02/russian-shashlik.jpg',
       path: '/menu/kaboblar'
     },

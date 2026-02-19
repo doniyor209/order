@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Tea.css'; // Можно переименовать в Drinks.css, но если стили общие, оставь так
-import { coca, kinza, kinzaDrink, mirinda, pepsi, suv } from '../assets';
+import {  kinzaDrink,  suv } from '../assets';
 
 
 
@@ -15,27 +15,9 @@ function Drinks() {
   // Массив с данными для напитков
   const drinks = [
     {
-      title: 'Coca-Cola', // Можно заменить на t('drinks.coca') если добавишь в переводы
-      description: t('drinks.coca_desc'), // Пример использования переводов
-      price: '3 SAR',
-      img: coca,
-    },
-    {
-      title: 'Pepsi',
-      description: t('drinks.pepsi_desc'),
-      price: '3 SAR',
-      img: pepsi,
-    },
-    {
-      title: 'Mirinda',
-      description: t('drinks.mirinda_desc'),
-      price: '3 SAR',
-      img: mirinda,
-    },
-    {
       title: t('drinks.kinza'), // Напиток Кинза
       description: t('drinks.kinza_desc'),
-      price: '2.5 SAR',
+      price: '3 SAR',
       img: kinzaDrink,
     },
     {

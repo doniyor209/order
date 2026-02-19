@@ -20,7 +20,7 @@ function Kaboblar() {
     {
       title: t('kaboblar.tovuq'),
       description: t('kaboblar.tovuq_desc'),
-      price: '10-12 SAR',
+      price: '10 SAR',
       img: 'https://tarnov.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F4b060e83-a3fc-43f1-9cbe-1aad97752dd0&w=640&q=75',
     },
   ];

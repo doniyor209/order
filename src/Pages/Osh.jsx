@@ -19,7 +19,7 @@ function Osh() {
         {
             title: t('osh.devzira'),
             description: t('osh.devzira_desc'),
-            price: '30 SAR',
+            price: '1 kg 280 SAR',
             img: 'https://arbuz.com/wp-content/uploads/2009/07/Uzbek-Plov.jpg',
         },
     ];

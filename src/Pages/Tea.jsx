@@ -16,13 +16,13 @@ function Tea() {
     {
       title: t('tea.green'),
       description: t('tea.green_desc'),
-      price: '2 SAR',
+      price: '3 SAR',
       img: green,
     },
     {
       title: t('tea.black'),
       description: t('tea.black_desc'),
-      price: ' 2 SAR',
+      price: ' 3 SAR',
       img: black,
     },
     {

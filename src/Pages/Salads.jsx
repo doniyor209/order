@@ -15,19 +15,19 @@ function Salads() {
     {
       title: t('salads.achchiq_chuchuk'),
       description: t('salads.achchiq_chuchuk_desc'),
-      price: '15 SAR',
+      price: '5 SAR',
       img: w,
     },
     {
       title: t('salads.greek'),
       description: t('salads.greek_desc'),
-      price: '22 SAR',
+      price: '10 SAR',
       img: q,
     },
     {
       title: t('salads.suzma'),
       description: t('salads.suzma_desc'),
-      price: '18 SAR',
+      price: '5 SAR',
       img: ePng,
     },
   ];

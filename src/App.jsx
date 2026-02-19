@@ -17,7 +17,7 @@ function Home() {
 
   const openLocation = () => {
     window.open(
-      "https://www.google.com/maps/place/%D9%85%D8%B7%D8%B9%D9%85+%D8%A7%D9%88%D8%B2%D8%A8%D9%83+%D9%87%D8%A7%D9%88%D8%B3",
+      "https://maps.google.com/maps?q=21.372038,39.835457&ll=21.372038,39.835457&z=16",
       "_blank",
       "noopener,noreferrer"
     );
@@ -64,7 +64,7 @@ function Home() {
             className="btn instagram"
           >
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+              src="https://avatars.mds.yandex.net/get-altay/14165812/2a000001928bb613d236257e9651d8d56e86/L_height"
               alt="Instagram"
               width="32"
             />
@@ -72,7 +72,7 @@ function Home() {
           </a>
 
           <a
-            href="https://t.me/Qarsillamasomsa_uz"
+            href="https://t.me/Qarsillamasomsa_uz/269"
             target="_blank"
             rel="noopener noreferrer"
             className="btn telegram"

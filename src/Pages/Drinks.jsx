@@ -23,7 +23,7 @@ function Drinks() {
     {
       title: t('drinks.water'), // Вода
       description: t('drinks.water_desc'),
-      price: '2 SAR',
+      price: '1 SAR',
       img: suv,
     },
   ];

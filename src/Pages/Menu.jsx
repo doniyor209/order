@@ -69,7 +69,7 @@ function Menu() {
     {
       name: t('menuItems.kok_choy') || 'Кўк чой',
       description: t('menuItems.kok_choy_desc') || 'Зелёный чай',
-      price: '8 SAR',
+      price: '3-5 SAR',
       img: teas,
       path: '/menu/Tea'   // ← сюда сам поставишь, если нужно
     },

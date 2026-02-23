@@ -78,7 +78,7 @@ function Menu() {
     {
       name: t('menuItems.ayron') || 'Айрон',
       description: t('menuItems.ayron_desc') || 'Прохладный айран',
-      price: '2-5 SAR',
+      price: '1-5 SAR',
       img: drinks,
       path: '/menu/drinks'   // ← сюда сам поставишь, если нужно
     }

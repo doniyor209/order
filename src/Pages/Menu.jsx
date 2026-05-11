@@ -23,14 +23,14 @@ function Menu() {
     {
       name: t('menuItems.lagmon'),
       description: t('menuItems.lagmon_desc'),
-      price: '20 SAR',
+      price: '25 SAR',
       img: Lagman,
       path: ''
     },
     {
       name: t('menuItems.osh'),
       description: t('menuItems.osh_desc'),
-      price: '25 SAR',
+      price: '30 - 35 SAR',
       img: uzb,
       path: '/menu/osh'
     },
@@ -44,14 +44,14 @@ function Menu() {
     {
       name: t('menuItems.mastava'),
       description: t('menuItems.mastava_desc'),
-      price: '15 SAR',
+      price: '20 SAR',
       img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrY0cJcdf7i0-e1VznZkg0RMbuwti5e0yQMbNa7NGi-NbiVVHYrCQ1wg&s=10',
       path: ''
     },
     {
       name: t('menuItems.qarsillama_somsa'),
       description: t('menuItems.qarsillama_somsa_desc'),
-      price: '3-4 SAR',
+      price: '5 SAR',
       img: back,
       path: '/menu/Somsa'
     },
@@ -60,7 +60,7 @@ function Menu() {
     {
       name: t('menuItems.salads') || 'Ачичук',
       description: t('menuItems.salads_desc') || 'Помидоры, огурцы, лук, зелень, перец',
-      price: '15 SAR',
+      price: '5-10 SAR',
       img: salads,
       path: '/menu/Salads'   // ← сюда сам поставишь, если нужно
     },

@@ -23,6 +23,14 @@ function Home() {
     );
   };
 
+  const openMenuPDF = () => {
+    window.open(
+      "/Menu PDF.pdf",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   const changeLanguage = (e) => {
     i18n.changeLanguage(e.target.value);
   };
@@ -87,6 +95,11 @@ function Home() {
 
           <button onClick={openLocation} className="btn location">
             📍 {t("location")}
+          </button>
+
+          {/* КНОПКА ДЛЯ ОТКРЫТИЯ PDF МЕНЮ */}
+          <button onClick={openMenuPDF} className="btn pdf">
+            📄 {t("menu_pdf") || "PDF Menu"}
           </button>
 
           {/* ВНУТРЕННИЙ РОУТ → Link */}

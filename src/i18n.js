@@ -12,6 +12,7 @@ const resources = {
       telegram: "Telegram канал",
       location: "Мекка — Батха Курайш",
       Menu: "Меню",
+      menu_pdf: "PDF Меню",
 
       back_to_menu: "Назад в меню",
       back_home: "На главную",
@@ -63,7 +64,7 @@ const resources = {
       "salads.suzma_desc": "Сузьма (густой йогурт) с огурцами, зеленью, чесноком и специями",
       "salads.serving": "Подаётся свежим с хлебом и зеленью",
       "salads.fresh": "Только свежие ингредиенты каждый день",
-      "salads.title": "Салаты", // Добавленный перевод
+      "salads.title": "Салаты",
 
       "tea.title": "Чай",
       "tea.subtitle": "Традиционный узбекский чай — зелёный, чёрный и с лимоном",
@@ -76,7 +77,6 @@ const resources = {
       "tea.serving": "Подаётся горячим в пиалах или стаканах",
       "tea.traditional": "Традиционный узбекский чай — всегда свежий и ароматный",
 
-      // Добавленные переводы для напитков
       "drinks.title": "Напитки",
       "drinks.subtitle": "Освежающие напитки для любого вкуса",
       "drinks.coca": "Coca-Cola",
@@ -89,6 +89,8 @@ const resources = {
       "drinks.kinza_desc": "Традиционный узбекский освежающий напиток",
       "drinks.water": "Вода",
       "drinks.water_desc": "Чистая питьевая вода",
+      "drinks.kompot": "Компот",
+      "drinks.kompot_desc": "Домашний компот из сухофруктов",
       "drinks.serving": "Подаётся охлаждённым со льдом",
       "drinks.additional": "Спросите о других доступных напитках",
 
@@ -122,6 +124,7 @@ const resources = {
       telegram: "Telegram kanali",
       location: "Makka — Bat'ha Quraysh",
       Menu: "Menyu",
+      menu_pdf: "PDF Menyu",
 
       back_to_menu: "Menyuga qaytish",
       back_home: "Bosh sahifaga",
@@ -140,7 +143,7 @@ const resources = {
       "kaboblar.qiyma": "Qiyima kabob (Lyulya-kebab)",
       "kaboblar.qiyma_desc": "Qo'y go'shtidan maydalangan, piyoz va ziravorlar bilan nozik kabob",
       "kaboblar.jaz": "Jaz kabob (bo'lakli)",
-      "kaboblar.jaz_desc": "Marinadlangan qo'y yoki mol go'shtidan shirali kabob",
+      "kaboblar.jaz_desc": "Marinadlangan qo'y yoki mol go'shtidan shirali kabob \n Faqat zakazga qilinadi",
       "kaboblar.tovuq": "Tovuq kabob",
       "kaboblar.tovuq_desc": "Ziravorlarda marinadlangan tovuq go'shtidan kabob",
       "kaboblar.serving": "Yangi piyoz, non va sous bilan beriladi",
@@ -150,7 +153,7 @@ const resources = {
       "osh.lazir": "Osh Lazir",
       "osh.lazir_desc": "Lazir guruchida klassik osh — donador, xushbo'y, qo'y go'shti va sariq sabzi bilan",
       "osh.devzira": "Osh Devzira",
-      "osh.devzira_desc": "Elit Devzira guruchida premium osh — boy ta'm, yumshoq qo'y go'sht  \n Faqat zakazga qilinadi",
+      "osh.devzira_desc": "Elit Devzira guruchida premium osh — boy ta'm, yumshoq qo'y go'sht \n Faqat zakazga qilinadi",
       "osh.serving": "Issiq holda achchiq-chuchuk, non va ayran bilan",
       "osh.cooked_in_kazan": "Katta qozonda ochiq olovda pishiriladi",
 
@@ -173,7 +176,7 @@ const resources = {
       "salads.suzma_desc": "Suzma (qaymoqsimon yogurt), bodring, ko'katlar, sarimsoq va ziravorlar bilan",
       "salads.serving": "Yangi holda non va ko'katlar bilan beriladi",
       "salads.fresh": "Har kuni faqat yangi masalliqlar",
-      "salads.title": "Salatlar", // Добавленный перевод
+      "salads.title": "Salatlar",
 
       "tea.title": "Choy",
       "tea.subtitle": "An'anaviy o'zbek choyi — yashil, qora va limonli",
@@ -186,7 +189,6 @@ const resources = {
       "tea.serving": "Piyola yoki stakanda issiq holda beriladi",
       "tea.traditional": "An'anaviy o'zbek choyi — har doim yangi va xushbo'y",
 
-      // Добавленные переводы для напитков
       "drinks.title": "Ichimliklar",
       "drinks.subtitle": "Har qanday ta'm uchun tetiklantiruvchi ichimliklar",
       "drinks.coca": "Coca-Cola",
@@ -199,6 +201,8 @@ const resources = {
       "drinks.kinza_desc": "An'anaviy o'zbek tetiklantiruvchi ichimligi",
       "drinks.water": "Suv",
       "drinks.water_desc": "Toza ichimlik suvi",
+      "drinks.kompot": "Kompot",
+      "drinks.kompot_desc": "Uy quritilgan mevalardan kompot",
       "drinks.serving": "Muz bilan sovutilgan holda beriladi",
       "drinks.additional": "Boshqa mavjud ichimliklar haqida so'rang",
 
@@ -232,6 +236,7 @@ const resources = {
       telegram: "Telegram channel",
       location: "Mecca — Batha Quraysh",
       Menu: "Menu",
+      menu_pdf: "PDF Menu",
 
       back_to_menu: "Back to menu",
       back_home: "Back to home",
@@ -250,7 +255,7 @@ const resources = {
       "kaboblar.qiyma": "Qiyma Kebab (Lula-kebab)",
       "kaboblar.qiyma_desc": "Tender minced lamb kebab with onion and spices",
       "kaboblar.jaz": "Jaz Kebab (chunk)",
-      "kaboblar.jaz_desc": "Juicy marinated lamb or beef kebab  \n It's just for order",
+      "kaboblar.jaz_desc": "Juicy marinated lamb or beef kebab \n It's just for order",
       "kaboblar.tovuq": "Chicken Kebab",
       "kaboblar.tovuq_desc": "Spiced marinated chicken kebab",
       "kaboblar.serving": "Served with fresh onion, flatbread and sauce",
@@ -260,7 +265,7 @@ const resources = {
       "osh.lazir": "Lazir Pilaf",
       "osh.lazir_desc": "Classic pilaf on Lazir rice — fluffy, aromatic, with lamb and yellow carrot",
       "osh.devzira": "Devzira Pilaf",
-      "osh.devzira_desc": "Premium pilaf on elite Devzira rice — rich flavor, tender lamb",
+      "osh.devzira_desc": "Premium pilaf on elite Devzira rice — rich flavor, tender lamb \n It's just for order",
       "osh.serving": "Served hot with achchiq-chuchuk, flatbread and ayran",
       "osh.cooked_in_kazan": "Cooked in a large kazan over open fire",
 
@@ -283,7 +288,7 @@ const resources = {
       "salads.suzma_desc": "Suzma (thick yogurt) with cucumbers, herbs, garlic and spices",
       "salads.serving": "Served fresh with bread and greens",
       "salads.fresh": "Fresh ingredients every day",
-      "salads.title": "Salads", // Добавленный перевод
+      "salads.title": "Salads",
 
       "tea.title": "Tea",
       "tea.subtitle": "Traditional Uzbek tea — green, black and with lemon",
@@ -296,7 +301,6 @@ const resources = {
       "tea.serving": "Served hot in bowls or glasses",
       "tea.traditional": "Traditional Uzbek tea — always fresh and aromatic",
 
-      // Добавленные переводы для напитков
       "drinks.title": "Drinks",
       "drinks.subtitle": "Refreshing drinks for every taste",
       "drinks.coca": "Coca-Cola",
@@ -309,6 +313,8 @@ const resources = {
       "drinks.kinza_desc": "Traditional Uzbek refreshing drink",
       "drinks.water": "Water",
       "drinks.water_desc": "Pure drinking water",
+      "drinks.kompot": "Kompot",
+      "drinks.kompot_desc": "Homemade dried fruit compote",
       "drinks.serving": "Served chilled with ice",
       "drinks.additional": "Ask about other available drinks",
 

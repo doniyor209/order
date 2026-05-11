@@ -13,13 +13,13 @@ function Osh() {
         {
             title: t('osh.lazir'),
             description: t('osh.lazir_desc'),
-            price: '25 SAR',
+            price: '30 SAR',
             img: 'https://arbuz.com/wp-content/uploads/2009/12/Uzbek-Palov.jpg',
         },
         {
             title: t('osh.devzira'),
             description: t('osh.devzira_desc'),
-            price: '1 kg 280 SAR',
+            price: '35 SAR',
             img: 'https://arbuz.com/wp-content/uploads/2009/07/Uzbek-Plov.jpg',
         },
     ];

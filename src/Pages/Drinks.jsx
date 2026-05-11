@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import './Tea.css'; // Можно переименовать в Drinks.css, но если стили общие, оставь так
-import {  kinzaDrink,  suv } from '../assets';
-
-
+import './Drinks.css'; // Можно переименовать в Drinks.css, но если стили общие, оставь так
+import { kinzaDrink, suv } from '../assets';
 
 function Drinks() {
   const { t, i18n } = useTranslation();
@@ -26,12 +24,21 @@ function Drinks() {
       price: '1 SAR',
       img: suv,
     },
+    {
+      title: t('drinks.kompot'), // Компот
+      description: t('drinks.kompot_desc'),
+      price: '0.4 L - 5 SAR | 1 L - 10 SAR',
+      img: '../../src/assets/Kompot.png', // Основное фото (можно добавить позже)
+      kompotImages: {
+        small: '../../src/assets/kompot_small.jpg', // Сюда добавь фото для 0.4L (путь к изображению)
+        large: '../../src/assets/kompot_large.jpg', // Сюда добавь фото для 1L (путь к изображению)
+      },
+    },
   ];
 
   return (
     <div className="dish-detail-page">
       <div className="dish-container">
-
         {/* Переключатель языка */}
         <div className="lang-container">
           <select
@@ -54,20 +61,56 @@ function Drinks() {
         <h1 className="dish-title">{t('drinks.title')}</h1>
         <p className="dish-subtitle">{t('drinks.subtitle')}</p>
 
-        {/* Сетка напитков (используем tea-grid, т.к. CSS класс общий) */}
+        {/* Сетка напитков */}
         <div className="tea-grid">
           {drinks.map((item, index) => (
             <div key={index} className="tea-item">
-              <img
-                src={item.img}
-                alt={item.title}
-                className="tea-img"
-                loading="lazy"
-              />
+              {item.img ? (
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="tea-img"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="tea-img-placeholder">🍹</div>
+              )}
               <div className="tea-info">
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
                 <div className="price">{item.price}</div>
+                
+                {/* Дополнительные фото для компота (два размера) */}
+                {item.kompotImages && (
+                  <div className="kompot-sizes">
+                    <div className="kompot-size-item">
+                      {item.kompotImages.small ? (
+                        <img
+                          src={item.kompotImages.small}
+                          alt="Kompot 0.4L"
+                          className="kompot-size-img"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="kompot-size-placeholder">🍹 0.4L</div>
+                      )}
+                      <span className="kompot-size-label">0.4 L - 5 SAR</span>
+                    </div>
+                    <div className="kompot-size-item">
+                      {item.kompotImages.large ? (
+                        <img
+                          src={item.kompotImages.large}
+                          alt="Kompot 1L"
+                          className="kompot-size-img"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="kompot-size-placeholder">🍹 1L</div>
+                      )}
+                      <span className="kompot-size-label">1 L - 10 SAR</span>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           ))}
@@ -78,7 +121,6 @@ function Drinks() {
           <p>{t('drinks.serving')}</p>
           <p>{t('drinks.additional')}</p>
         </div>
-
       </div>
     </div>
   );

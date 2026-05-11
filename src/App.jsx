@@ -25,7 +25,7 @@ function Home() {
 
   const openMenuPDF = () => {
     window.open(
-      "/Menu PDF.pdf",
+      "../../../src/Menu PDF.pdf",
       "_blank",
       "noopener,noreferrer"
     );

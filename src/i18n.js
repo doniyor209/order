@@ -13,6 +13,7 @@ const resources = {
       location: "Мекка — Батха Курайш",
       Menu: "Меню",
       menu_pdf: "PDF Меню",
+      menu_image: "📷 Меню",
 
       back_to_menu: "Назад в меню",
       back_home: "На главную",
@@ -125,6 +126,7 @@ const resources = {
       location: "Makka — Bat'ha Quraysh",
       Menu: "Menyu",
       menu_pdf: "PDF Menyu",
+      menu_image: "📷 Menyu",
 
       back_to_menu: "Menyuga qaytish",
       back_home: "Bosh sahifaga",
@@ -237,6 +239,7 @@ const resources = {
       location: "Mecca — Batha Quraysh",
       Menu: "Menu",
       menu_pdf: "PDF Menu",
+      menu_image: "📷 Menu",
 
       back_to_menu: "Back to menu",
       back_home: "Back to home",

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import "./App.css";
 import "./i18n";
 
@@ -13,6 +14,7 @@ import Drinks from "./Pages/Drinks";
 
 function Home() {
   const { t, i18n } = useTranslation();
+  const [showGallery, setShowGallery] = useState(false);
 
   const openLocation = () => {
     window.open(
@@ -22,13 +24,23 @@ function Home() {
     );
   };
 
-  const openMenuPDF = () => {
-    window.open("/menu.pdf", "_blank", "noopener,noreferrer");
+  const openMenuImage = () => {
+    setShowGallery(true);
+  };
+
+  const closeGallery = () => {
+    setShowGallery(false);
   };
 
   const changeLanguage = (e) => {
     i18n.changeLanguage(e.target.value);
   };
+
+  // Генерируем 22 фото (1.jpg, 2.jpg, ... 22.jpg)
+  const menuImages = [];
+  for (let i = 1; i <= 22; i++) {
+    menuImages.push(`/menu${i}.png`);
+  }
 
   return (
     <div className="app-container">
@@ -91,8 +103,8 @@ function Home() {
             📍 {t("location")}
           </button>
 
-          <button onClick={openMenuPDF} className="btn pdf">
-            📄 {t("menu_pdf") || "PDF Menu"}
+          <button onClick={openMenuImage} className="btn menu-image">
+            🖼️ {t("menu_image") || "Меню"}
           </button>
 
           <Link to="/menu" className="btn menu">
@@ -100,6 +112,22 @@ function Home() {
           </Link>
         </div>
       </div>
+
+      {/* Галерея фото меню */}
+      {showGallery && (
+        <div className="gallery-overlay" onClick={closeGallery}>
+          <div className="gallery-container" onClick={(e) => e.stopPropagation()}>
+            <button className="gallery-close" onClick={closeGallery}>✕</button>
+            <div className="gallery-grid">
+              {menuImages.map((img, index) => (
+                <div key={index} className="gallery-item">
+                  <img src={img} alt={`Меню ${index + 1}`} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

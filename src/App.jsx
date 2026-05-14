@@ -11,7 +11,6 @@ import Salads from "./Pages/Salads";
 import Tea from "./Pages/Tea";
 import Drinks from "./Pages/Drinks";
 
-
 function Home() {
   const { t, i18n } = useTranslation();
 
@@ -24,11 +23,7 @@ function Home() {
   };
 
   const openMenuPDF = () => {
-    window.open(
-      "../../../src/Menu PDF.pdf",
-      "_blank",
-      "noopener,noreferrer"
-    );
+    window.open("/menu.pdf", "_blank", "noopener,noreferrer");
   };
 
   const changeLanguage = (e) => {
@@ -54,7 +49,6 @@ function Home() {
         <p className="subtitle">{t("subtitle")}</p>
 
         <div className="links">
-          {/* ВНЕШНИЕ ССЫЛКИ → <a> */}
           <a
             href="https://www.instagram.com/uzbekhouse.ksa"
             target="_blank"
@@ -97,12 +91,10 @@ function Home() {
             📍 {t("location")}
           </button>
 
-          {/* КНОПКА ДЛЯ ОТКРЫТИЯ PDF МЕНЮ */}
           <button onClick={openMenuPDF} className="btn pdf">
             📄 {t("menu_pdf") || "PDF Menu"}
           </button>
 
-          {/* ВНУТРЕННИЙ РОУТ → Link */}
           <Link to="/menu" className="btn menu">
             {t("Menu")}
           </Link>
@@ -133,16 +125,13 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-
         <Route path="/menu" element={<Menu />} />
         <Route path="/menu/kaboblar" element={<Kaboblar />} />
         <Route path="/menu/osh" element={<Osh />} />
         <Route path="/menu/somsa" element={<Somsa />} />
         <Route path="/menu/salads" element={<Salads />} />
         <Route path="/menu/tea" element={<Tea />} />
-        {/* Добавленный роут для напитков */}
         <Route path="/menu/drinks" element={<Drinks />} />
-
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

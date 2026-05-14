@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Kaboblar.css';
-// import { Nomi } from '../assets';
+import { qiyma, tovuq } from '../assets';
 
 function Kaboblar() {
   const { t, i18n } = useTranslation();
@@ -15,13 +15,13 @@ function Kaboblar() {
       title: t('kaboblar.qiyma'),
       description: t('kaboblar.qiyma_desc'),
       price: '10 SAR',
-      img: 'https://tarnov.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F88a80d9c-41a9-4b90-8913-aa7ae9478677&w=640&q=75',
+      img: qiyma,
     },
     {
       title: t('kaboblar.tovuq'),
       description: t('kaboblar.tovuq_desc'),
       price: '10 SAR',
-      img: 'https://tarnov.uz/_next/image?url=https%3A%2F%2Fcdn.delever.uz%2Fdelever%2F4b060e83-a3fc-43f1-9cbe-1aad97752dd0&w=640&q=75',
+      img: tovuq,
     },
   ];
 

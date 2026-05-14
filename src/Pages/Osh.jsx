@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Osh.css'; // создай или используй Kaboblar.css
+import { lazer, devzira } from '../assets';
+
 
 function Osh() {
     const { t, i18n } = useTranslation();
@@ -14,13 +16,13 @@ function Osh() {
             title: t('osh.lazir'),
             description: t('osh.lazir_desc'),
             price: '30 SAR',
-            img: 'https://arbuz.com/wp-content/uploads/2009/12/Uzbek-Palov.jpg',
+            img: lazer,
         },
         {
             title: t('osh.devzira'),
             description: t('osh.devzira_desc'),
             price: '35 SAR',
-            img: 'https://arbuz.com/wp-content/uploads/2009/07/Uzbek-Plov.jpg',
+            img: devzira,
         },
     ];
 

@@ -9,7 +9,7 @@ export { default as ePng } from './images/e.png';
 export { default as f } from './images/f.JPG';
 export { default as green } from './images/green.png';
 export { default as kinza } from './images/kinza.png';
-export { default as lagman } from './images/lagman.png';
+// export { default as lagman } from './images/lagmannn.png';
 export { default as limon } from './images/limon.png';
 export { default as q } from './images/q.png';
 export { default as salads } from './images/salads.png';
@@ -17,7 +17,16 @@ export { default as teas } from './images/teas.png';
 export { default as w } from './images/w.png';
 export { default as drinks } from './images/drinks.png';
 export { default as uzb } from './images/uzb.jpg';
-export { default as Lagman } from './images/Lagman.jpg';
+export { default as Lagman } from './images/lagmannn.png';
+export { default as Kaboblar } from './images/kaboblarr.png';
+export { default as osh } from './images/osh.png';
+export { default as qiyma } from './images/qiyma.png';
+export { default as tovuq } from './images/tovuq.png';
+export { default as lazer } from './images/lazer.png';
+export { default as devzira } from './images/devzira.png';
+export { default as kompott } from './images/kompott.png';
+export { default as small } from './images/small.png';
+export { default as big } from './images/big.png';
 // export { default as dPng } from './images/d.png'; // Этот файл не существует
 
 // Добавленные экспорты для напитков

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Menu.css';
-import { back, drinks, Lagman, salads, teas, uzb } from '../assets';
+import { back, drinks, Kaboblar,Lagman, salads, teas, osh } from '../assets';
 
 
 
@@ -17,7 +17,7 @@ function Menu() {
       name: t('menuItems.kaboblar'),
       description: t('menuItems.kaboblar_desc'),
       price: '10 SAR',
-      img: 'https://petersfoodadventures.com/wp-content/uploads/2017/02/russian-shashlik.jpg',
+      img: Kaboblar,
       path: '/menu/kaboblar'
     },
     {
@@ -31,21 +31,21 @@ function Menu() {
       name: t('menuItems.osh'),
       description: t('menuItems.osh_desc'),
       price: '30 - 35 SAR',
-      img: uzb,
+      img: osh,
       path: '/menu/osh'
     },
     {
       name: t('menuItems.chuchvara'),
       description: t('menuItems.chuchvara_desc'),
       price: '20 SAR',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcwcPuousHK-BiQTrAqiuFO2ssqwJhQA55mJ_1LbvytWjTCYxe04_nZ-c7&s=10',
+      img: 'https://t3.ftcdn.net/jpg/02/32/38/54/360_F_232385404_fq5uOgpY5wwDNANIS4DYicAM736DJnCp.jpg',
       path: ''
     },
     {
       name: t('menuItems.mastava'),
       description: t('menuItems.mastava_desc'),
       price: '20 SAR',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrY0cJcdf7i0-e1VznZkg0RMbuwti5e0yQMbNa7NGi-NbiVVHYrCQ1wg&s=10',
+      img: 'https://png.klev.club/uploads/posts/2024-05/png-klev-club-u8jd-p-mastava-png-26.png',
       path: ''
     },
     {

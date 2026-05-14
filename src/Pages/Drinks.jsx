@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './Drinks.css'; // Можно переименовать в Drinks.css, но если стили общие, оставь так
-import { kinzaDrink, suv } from '../assets';
+import { kinzaDrink, suv , kompott, small, big } from '../assets';
 
 function Drinks() {
   const { t, i18n } = useTranslation();
@@ -28,10 +28,10 @@ function Drinks() {
       title: t('drinks.kompot'), // Компот
       description: t('drinks.kompot_desc'),
       price: '0.4 L - 5 SAR | 1 L - 10 SAR',
-      img: '../../src/assets/Kompot.png', // Основное фото (можно добавить позже)
+      img: kompott, // Основное фото (можно добавить позже)
       kompotImages: {
-        small: '../../src/assets/kompot_small.jpg', // Сюда добавь фото для 0.4L (путь к изображению)
-        large: '../../src/assets/kompot_large.jpg', // Сюда добавь фото для 1L (путь к изображению)
+        small: small, // Сюда добавь фото для 0.4L (путь к изображению)
+        large: big, // Сюда добавь фото для 1L (путь к изображению)
       },
     },
   ];
